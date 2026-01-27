@@ -3,24 +3,23 @@
     "configurations": [
         {
             "name": "Python: Current File",
-            "type": "debugpy",
+            "type": "python",
             "request": "launch",
             "program": "${file}",
             "console": "internalConsole",
-            "env": {
-                "PYTHONPATH": "${workspaceFolder}"
-            }
+            "cwd": "${fileDirname}",
+            "justMyCode": true
         },
-        {
-            "name": "Python: Module (hot150 package)",
-            "type": "debugpy",
-            "request": "launch",
-            "module": "hot150.${fileBasenameNoExtension}",
-            "cwd": "${workspaceFolder}",
-            "console": "integratedTerminal",
-            "env": {
-                "PYTHONPATH": "${workspaceFolder}"
-            }
-        }
+        // {
+        //     "name": "Python: Remote Attach",
+        //     "type": "python",
+        //     "request": "attach",
+        //     "connect": {
+        //         "host": "localhost",
+        //         "port": 5678
+        //     },
+        //     "justMyCode": true,
+        //     "preLaunchTask": "Start Debug Server"
+        // }
     ]
 }

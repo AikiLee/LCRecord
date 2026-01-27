@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start Debug Server",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "/c/Users/15869/AppData/Local/Microsoft/WindowsApps/py -m debugpy --listen 5678 --wait-for-client \"$1\" & sleep 1; echo 'Debugger Ready'; wait",
+                "--",
+                "${file}"
+            ],
+            "isBackground": true,
+            "problemMatcher": {
+                "pattern": [
+                    {
+                        "regexp": ".",
+                        "file": 1,
+                        "location": 2,
+                        "message": 3
+                    }
+                ],
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "^.*$",
+                    "endsPattern": "^Debugger Ready$"
+                }
+            },
+            "presentation": {
+                "reveal": "silent",
+                "panel": "dedicated"
+            }
+        }
+    ]
+}
