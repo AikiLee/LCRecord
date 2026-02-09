@@ -1,0 +1,1675 @@
+<!DOCTYPE html>
+<html data-page="problem_main" data-layout="basic" class="layout--basic page--problem_main theme--light nojs" data-mantine-color-scheme="light" lang="zh" data-app="Hydro">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.hydrooj.com/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="https://cdn.hydrooj.com/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://cdn.hydrooj.com/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="https://cdn.hydrooj.com/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="https://cdn.hydrooj.com/favicon-16x16.png" sizes="16x16">
+  <link rel="canonical" href="https://hydro.ac/p">  <meta name="theme-color" content="#56758f">
+    <meta property="og:site_name" content="HydroOJ" />
+  <meta property="og:url" content="https://hydro.ac/p" />
+  <meta property="og:image" content="https://cdn.hydrooj.com/favicon-96x96.png" />
+      <title>题库 - HydroOJ</title>
+  <style>
+    body {
+      --font-family: "Open Sans", "Open Sans", "Seravek", "Segoe UI", "Verdana", "PingFang SC", "Hiragino Sans GB", "Lantinghei SC", "Microsoft Yahei", "WenQuanYi Micro Hei", "sans";
+      --code-font-family: "Source Code Pro", "monaco", "Source Code Pro", "Consolas", "Lucida Console", "monospace";
+      --font-ligatures: none !important;
+    }
+          #panel { display: flex; flex-direction: column; }
+      </style>
+      <link rel="stylesheet" media="all" href="https://cdn.hydrooj.com/theme-4.58.0-beta.18.css">
+        <script>
+      var _htmlNode = document.documentElement;
+      _htmlNode.className = _htmlNode.className.replace(' nojs', ' hasjs');
+      window.UiContext = '{"cdn_prefix":"https://cdn.hydrooj.com/","url_prefix":"/","ws_prefix":"wss://cdn.hydrooj.com/","onlyofficeApi":"https://office.hydro.ac/web-apps/apps/api/documents/api.js","isHydroAC":"https://office.hydro.ac/web-apps/apps/api/documents/api.js","lspHost":"wss://cn-hz.hydrooj.com","aiFeatures":{"askai":false,"aiChat":false,"translate":true},"aiAssets":{"js":"index-zgeXkofv.js","css":"index-CWDHuGIF.css"},"aiChat":{"problem":{"prepend":"\u7528\u6237\u6B63\u5728\u9488\u5BF9\u8FD9\u9053\u9898\u76EE\u8FDB\u884C\u63D0\u95EE\uFF1A\\n{problem}","selectText":false,"choices":[{"title":"\u6211\u4E0D\u7406\u89E3\u8FD9\u9053\u9898\u76EE","label":"","action":"\u6211\u4E0D\u7406\u89E3\u8FD9\u9053\u9898\u76EE"}]},"solution":{"enabled":false}},"constantVersion":"1b328b64","domainId":"coder_gather","domain":{"_id":"coder_gather","lower":"coder_gather","owner":79022,"name":"coder_gather","bulletin":"# \u7B97\u6CD5\u5B9E\u6218\u5E73\u53F0\\r\\n1. \u63D0\u4F9BHUAWEI OD\u771F\u9898\u5728\u7EBF\u8BC4\u6D4B\\r\\n2. \u5982\u679C\u6709\u66F4\u597D\u7684\u89E3\u9898\u7684\u65B9\u6CD5\u6216\u53D1\u73B0\u9519\u8BEF\u8BF7\u53CA\u65F6\u8054\u7CFB\u6211\u3002\\r\\n\\r\\n# \u4F7F\u7528\u6559\u7A0B\u6559\u7A0B\\r\\n\\r\\n## 1.\u7B5B\u9009\u9898\u5E93\\r\\n![](/file/79022/ZcYDdJw-uuEHQxYurePn7.png)\\r\\n\\r\\n## 2. \u4EE3\u7801\u81EA\u6D4B\\r\\n![](/file/79022/7sALM3TA4I-M1BMem2Ilv.png)\\r\\n\\r\\n## 3. \u63D0\u4EA4\u4EE3\u7801\u6D4B\u8BC4\\r\\n![](/file/79022/jhOQLtCOc-VuVQHpbVOtg.png)\\r\\n\\r\\n# \u6CE8\u610F\\r\\n2025\u5E749\u670812\u5207\u6362\u81F3\u53CC\u673A\u4F4DA\u5377\u3002\u53CC\u673A\u4F4DA\u5377\u9898\u76EE\u8FD8\u5728\u6301\u7EED\u6536\u5F55\u4E2D\u3002\u53EF\u4EE5\u901A\u8FC7\u5982\u4E0B\u65B9\u6CD5\u7B5B\u9009\u51FA\u53CC\u673A\u4F4DA\u5377\u7684\u9898\u76EE\u3002\\r\\n\\r\\n![](/file/79022/jyTgQvmYqAnYE3A_Q-nP7.png)\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n","roles":{"user":"10715086071862673209484250490600018105614048117055336074437503883703510511249361224931983788156958581275946729175531468251871452856923140435984577574698574803934567774824230985421074605062371141877954182153046474983581941267398767559165543946077062914571196477686542167660429831652813842832105512075905","guest":"10715086071862673209484250490600018105614048117055336074437503883703510511249361224931983788156958581275946729175531468251871452856923140435984577574698574803934567774824230985421074605062371141877954182153046474983581941267398767559165543946077062914571196477686542167660429831652624386837205668069376","default":"10715086071862673209484250490600018105614048117055336074437503883703510511249361224931983788156958581275946729175531468251871452856923140435984577574698574803934567774824230985421074605062371141877954182153046474983581941267398767559165543946077062914571196477686542167660429831652624386837205668069376"},"avatar":"test@hydro.local","lastActive":"2026-02-05T10:23:11.852Z","langs":"","noAutocomplete":false,"share":"Algorithm_Warehouse","pro":"2026-02-06T06:53:05.180Z"},"SWConfig":{"preload":"","hosts":["http://hydro.ac","https://hydro.ac","https://hydro.ac/","https://cdn.hydrooj.com/"],"assets":[],"domains":[]}}';
+      window.UserContext = '{"_id":83845,"mail":"1586970907@qq.com","uname":"leeburn","hashType":"hydro","priv":16843780,"regat":"2025-02-24T10:39:07.494Z","loginat":"2026-02-05T10:14:40.341Z","perm":"BigInt::10715086071862673209484250490600018105614048117055336074437503883703510511249361224931983788156958581275946729175531468251871452856923140435984577574698574803934567774824230985421074605062371141877954182153046474983581941267398767559165543946077062914571196477686542167660429831652813842832105512075905","role":"user","scope":"BigInt::-1","tfa":false,"authn":false,"group":["83845"],"domains":[],"viewLang":"zh","timeZone":"Asia/Shanghai","codeLang":"nodejs.cjs","codeTemplate":"","avatar":"qq:1586970907","gender":2,"backgroundImage":"/components/profile/backgrounds/1.jpg","pinnedDomains":[],"rounded":false,"skipAnimate":false,"showTimeAgo":true,"fontFamily":"Open Sans","codeFontFamily":"Source Code Pro","theme":"light","preferredEditorType":"sv","showInvisibleChar":false,"formatCode":true,"rpInfo":{"problem":184.26786468400965,"checkin":-2},"nAccept":42,"nSubmit":45,"rp":182.26786468400965,"rank":389,"level":4,"join":true,"avatarUrl":"//q1.qlogo.cn/g?b=qq&nk=1586970907&s=160"}';
+    </script>
+      </head>
+<body>
+      <script type="text/javascript" src="/resource/1b328b64/entry.js"></script>
+    <script type="text/javascript" src="https://cdn.hydrooj.com/resource/4.58.0-beta.18/lang-zh.js"></script>
+    <script type="text/javascript" src="https://cdn.hydrooj.com/hydro-4.58.0-beta.18.js"></script>
+    <nav class="nav slideout-menu" id="menu">
+  <div class="row"><div class="columns clearfix">
+    <ol class="nav__list nav__list--main clearfix">
+      <li class="nav__list-item">
+        <a href="/"><img class="nav__logo" src="/components/navigation/nav-logo-small_dark.png"></a>
+      </li>        <li class="nav__list-item">
+  <a href="/d/coder_gather/" class="nav__item">
+    首页
+  </a>
+</li>
+              <li class="nav__list-item">
+  <a href="/d/coder_gather/p" class="nav__item nav--active">
+    题库
+  </a>
+</li>
+              <li class="nav__list-item">
+  <a href="/d/coder_gather/training" class="nav__item">
+    训练
+  </a>
+</li>
+              <li class="nav__list-item">
+  <a href="/d/coder_gather/contest" class="nav__item">
+    比赛
+  </a>
+</li>
+              <li class="nav__list-item">
+  <a href="/d/coder_gather/homework" class="nav__item">
+    作业
+  </a>
+</li>
+              <li class="nav__list-item">
+  <a href="/d/coder_gather/discuss" class="nav__item">
+    讨论
+  </a>
+</li>
+              <li class="nav__list-item">
+  <a href="/d/coder_gather/record?uidOrName=83845" class="nav__item">
+    评测记录
+  </a>
+</li>
+      </ol>
+    <ol class="nav__list nav__list--secondary clearfix">
+              <li class="nav__list-item" data-dropdown-pos="bottom right" data-dropdown-custom-class="nav__dropdown" data-dropdown-target="#menu-nav-domain" data-dropdown-disabledconstrainToWindow data-dropdown-trigger-desktop-only>
+        <span class="nav__item"><span class="icon"><img class="small user-profile-avatar v-center" loading="lazy" src="//cravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&amp;s=64" width="20" height="20"></span> coder_gather <span class="icon icon-expand_more nojs--hide"></span></span>
+        <ol class="dropdown-target menu" id="menu-nav-domain"><li class="menu__item">
+            <a href="/d/coder_gather/home/domain" class="menu__link">
+              <span class="icon icon-wrench"></span> 管理
+            </a>
+          </li>
+        </ol>
+      </li>
+          <li class="nav__list-item" data-dropdown-pos="bottom right" data-dropdown-custom-class="nav__dropdown" data-dropdown-target="#menu-nav-user" data-dropdown-disabledconstrainToWindow data-dropdown-trigger-desktop-only>
+        <a href="/d/coder_gather/user/83845" class="nav__item">leeburn <span class="icon icon-expand_more nojs--hide"></span></a>
+        <ol class="dropdown-target menu" id="menu-nav-user">
+          <li class="menu__item">
+            <a href="/d/coder_gather/user/83845" class="menu__link">
+              <span class="icon icon-account--circle"></span> 我的资料
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="/d/coder_gather/home/messages" class="menu__link">
+              <span class="icon icon-comment--multiple"></span> 站内消息
+            </a>
+          </li>
+          <li class="menu__seperator"></li>
+          <li class="menu__item">
+            <a href="/d/coder_gather/home/settings/domain" class="menu__link">
+              <span class="icon icon-web"></span> @ coder_gather
+            </a>
+          </li>
+          <li class="menu__seperator"></li>
+          <li class="menu__item">
+            <a href="/d/coder_gather/home/settings/account" class="menu__link">
+              <span class="icon icon-wrench"></span> 账户设置
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="/d/coder_gather/home/settings/preference" class="menu__link">
+              <span class="icon icon-sliders"></span> 偏好设置
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="/d/coder_gather/home/security" class="menu__link">
+              <span class="icon icon-security"></span> 安全设置
+            </a>
+          </li>
+          <li class="menu__seperator"></li>
+          <li class="menu__item">
+            <a href="/d/coder_gather/home/domain" class="menu__link">
+              <span class="icon icon-web"></span> 我的域
+            </a>
+          </li>
+                      <li class="menu__item">
+              <a href="/d/coder_gather/file" class="menu__link">
+                <span class="icon icon-file"></span> 我的文件
+              </a>
+            </li>
+                                <li class="menu__seperator"></li>            <li class="menu__item nojs--hide">
+                            <a href="/d/coder_gather/fund/info" class="menu__link">
+                <span class="icon icon-statistics"></span> 我的商店记录
+              </a>
+            </li>
+                        <li class="menu__item nojs--hide">
+                            <a href="/d/coder_gather/blog/83845" class="menu__link">
+                <span class="icon icon-book"></span> 博客
+              </a>
+            </li>
+                        <li class="menu__item nojs--hide">
+                            <a href="/d/coder_gather/ide" class="menu__link">
+                <span class="icon icon-code"></span> 在线IDE
+              </a>
+            </li>
+                      <li class="menu__seperator"></li>
+                    <li class="menu__item">
+            <a href="/d/coder_gather/logout" class="menu__link" name="nav_logout">
+              <span class="icon icon-logout"></span> 登出
+            </a>
+          </li>
+        </ol>
+      </li>
+        </ol>
+  </div></div>
+</nav>
+<nav class="nav--shadow"></nav>
+<div class="slideout-panel" id="panel">
+    <div class="slideout-overlay"></div>
+  <div class="header--mobile">
+  <div class="row"><div class="columns clearfix">
+    <div class="float-left">
+      <a class="header--mobile__domain" href="/" target="_self">
+        <img src="/components/navigation/nav-logo-small_dark.png">
+      </a>
+    </div>
+    <div class="float-right">
+      <button type="button" class="header__hamburger">
+  <div class="hamburger hamburger--spin">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </div>
+</button>
+    </div>
+  </div></div>
+</div>
+  <div class="main">
+          <div class="row">
+    <div class="medium-9 columns">
+      <div class="section display-mode">
+        <div class="section__body no-padding">
+          <form method="get" id="searchForm" action="/d/coder_gather/p">
+            <div class="search">
+              <input name="q" type="text" value="" placeholder="搜索">
+              <div data-fragment-id="problem_stat">
+  <p>501 道题</p>
+</div>              <select name="sort" class="search-sort"><option value="default" selected>默认排序</option><option value="recent" >最新题目</option></select>
+              <button type="submit">
+                <span class="icon icon-search"></span>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="section__body no-padding">
+          <div data-fragment-id="problem_list">
+    <ul class="pager pager-top"><li>
+          <span class="pager__item current">1</span>
+        </li><li>
+          <a class="pager__item page link" href="?page=2">2</a>
+        </li><li>
+          <a class="pager__item page link" href="?page=3">3</a>
+        </li><li>
+          <a class="pager__item page link" href="?page=4">4</a>
+        </li><li>
+          <a class="pager__item page link" href="?page=5">5</a>
+        </li><li>
+          <a class="pager__item page link" href="?page=6">6</a>
+        </li><li>
+          <a class="pager__item page link" href="?page=7">7</a>
+        </li><li>
+          <a class="pager__item page link" href="?page=8">8</a>
+        </li><li>
+          <a class="pager__item page link" href="?page=9">9</a>
+        </li><li>
+          <a class="pager__item page link" href="?page=10">10</a>
+        </li><li>
+          <a class="pager__item page link" href="?page=11">11</a>
+        </li><li>
+          <a class="pager__item next link" href="?page=2">下一页 ›</a>
+        </li><li>
+          <a class="pager__item last link" href="?page=11">末页 »</a>
+        </li></ul>
+
+  <table class="data-table hide-problem-tag">
+    <colgroup>
+      <col class="col--checkbox display-mode-hide">
+      <col class="col--pid display-mode-hide">
+          <col class="col--status edit-mode-hide">
+          <col class="col--name">
+      <col class="col--ac-tried">
+      <col class="col--difficulty">
+    </colgroup>
+    <thead>
+      <tr>
+        <th class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" name="select_all" data-checkbox-toggle="problem">
+          </label>
+        </th>
+        <th class="col--pid display-mode-hide">ID</th>
+                  <th class="col--status record-status--border edit-mode-hide">状态</th>
+                <th class="col--name">题目
+          <span class="nojs--hide toggle-tag tag--hide">显示标签</span>
+          <span class="nojs--hide toggle-tag notag--hide">隐藏标签</span>
+        </th>
+        <th class="col--ac-tried">AC / 尝试</th>
+        <th class="col--difficulty">难度</th>
+      </tr>
+    </thead>
+    <tbody>      <tr data-pid="204">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">204</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/204"  data-star="">
+              <a href="/d/coder_gather/p/oda0001"><b>oda0001</b>
+&nbsp;&nbsp;查找单入口空闲区域[100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3AA%E5%8D%B7">A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3ABFS">BFS</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025B%E5%8D%B7">2025B卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E6%9C%BA%E4%BD%8DA%E5%8D%B7">双机位A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E6%9C%BA%E4%BD%8DC%E5%8D%B7">双机位C卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">300 / 1755</td>
+        <td class="col--difficulty">8</td>
+      </tr>      <tr data-pid="205">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">205</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/205"  data-star="">
+              <a href="/d/coder_gather/p/oda0002"><b>oda0002</b>
+&nbsp;&nbsp;查找重复代码[100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92">动态规划</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3AA%E5%8D%B7">A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025C%E5%8D%B7">2025C卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">316 / 1402</td>
+        <td class="col--difficulty">7</td>
+      </tr>      <tr data-pid="206">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">206</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/206"  data-star="">
+              <a href="/d/coder_gather/p/oda0003"><b>oda0003</b>
+&nbsp;&nbsp;称砝码[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3AA%E5%8D%B7">A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98">背包问题</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E9%9B%86%E5%90%88">集合</a></li></ul>
+        </td>
+        <td class="col--ac-tried">110 / 367</td>
+        <td class="col--difficulty">6</td>
+      </tr>      <tr data-pid="207">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">207</td>
+                              <td class="col--status record-status--border edit-mode-hide pass">
+  <div class="col--status__text">
+    <span class="icon record-status--icon pass"></span>
+    <a 
+      href="/d/coder_gather/record/689d4bd1aa89b7e883a792a3"
+      class="record-status--text pass"
+    >
+            <span style="color: #25ad40">100</span>
+            Accepted
+    </a>
+  </div>
+  </td>
+
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/207"  data-star="">
+              <a href="/d/coder_gather/p/oda0004"><b>oda0004</b>
+&nbsp;&nbsp;打印机队列[100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3AA%E5%8D%B7">A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%A0%86">堆</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025B%E5%8D%B7">2025B卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025C%E5%8D%B7">2025C卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E6%9C%BA%E4%BD%8DA%E5%8D%B7">双机位A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E6%9C%BA%E4%BD%8DC%E5%8D%B7">双机位C卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">328 / 1396</td>
+        <td class="col--difficulty">7</td>
+      </tr>      <tr data-pid="208">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">208</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/208"  data-star="">
+              <a href="/d/coder_gather/p/oda0005"><b>oda0005</b>
+&nbsp;&nbsp;单词倒序[100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3AA%E5%8D%B7">A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E9%80%BB%E8%BE%91">逻辑</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025B%E5%8D%B7">2025B卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">168 / 878</td>
+        <td class="col--difficulty">8</td>
+      </tr>      <tr data-pid="209">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">209</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/209"  data-star="">
+              <a href="/d/coder_gather/p/oda0006"><b>oda0006</b>
+&nbsp;&nbsp;单向链表中间节点[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3AA%E5%8D%B7">A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E9%80%BB%E8%BE%91">逻辑</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">124 / 587</td>
+        <td class="col--difficulty">7</td>
+      </tr>      <tr data-pid="210">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">210</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/210"  data-star="">
+              <a href="/d/coder_gather/p/oda0007"><b>oda0007</b>
+&nbsp;&nbsp;等和子数组最小和[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3AA%E5%8D%B7">A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E9%80%92%E5%BD%92%E5%9B%9E%E6%BA%AF">递归回溯</a></li></ul>
+        </td>
+        <td class="col--ac-tried">44 / 250</td>
+        <td class="col--difficulty">8</td>
+      </tr>      <tr data-pid="211">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">211</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/211"  data-star="">
+              <a href="/d/coder_gather/p/oda0008"><b>oda0008</b>
+&nbsp;&nbsp;端口合并[100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3AA%E5%8D%B7">A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E9%80%BB%E8%BE%91">逻辑</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025B%E5%8D%B7">2025B卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E6%9C%BA%E4%BD%8DA%E5%8D%B7">双机位A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E6%9C%BA%E4%BD%8DC%E5%8D%B7">双机位C卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">79 / 847</td>
+        <td class="col--difficulty">9</td>
+      </tr>      <tr data-pid="212">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">212</td>
+                              <td class="col--status record-status--border edit-mode-hide pass">
+  <div class="col--status__text">
+    <span class="icon record-status--icon pass"></span>
+    <a 
+      href="/d/coder_gather/record/68a00b4c159353e152b7b842"
+      class="record-status--text pass"
+    >
+            <span style="color: #25ad40">100</span>
+            Accepted
+    </a>
+  </div>
+  </td>
+
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/212"  data-star="true">
+              <a href="/d/coder_gather/p/oda0009"><b>oda0009</b>
+&nbsp;&nbsp;对称美学[100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3AA%E5%8D%B7">A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3ADFS">DFS</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025B%E5%8D%B7">2025B卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025C%E5%8D%B7">2025C卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E9%80%BB%E8%BE%91%E5%88%86%E6%9E%90">逻辑分析</a></li></ul>
+        </td>
+        <td class="col--ac-tried">277 / 1362</td>
+        <td class="col--difficulty">7</td>
+      </tr>      <tr data-pid="213">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">213</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/213"  data-star="">
+              <a href="/d/coder_gather/p/oda0010"><b>oda0010</b>
+&nbsp;&nbsp;二元组个数[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3AA%E5%8D%B7">A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%93%88%E5%B8%8C">哈希</a></li></ul>
+        </td>
+        <td class="col--ac-tried">79 / 173</td>
+        <td class="col--difficulty">4</td>
+      </tr>      <tr data-pid="214">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">214</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/214"  data-star="">
+              <a href="/d/coder_gather/p/oda0011"><b>oda0011</b>
+&nbsp;&nbsp;幻方修复[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3AA%E5%8D%B7">A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E9%80%BB%E8%BE%91">逻辑</a></li></ul>
+        </td>
+        <td class="col--ac-tried">22 / 148</td>
+        <td class="col--difficulty">8</td>
+      </tr>      <tr data-pid="215">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">215</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/215"  data-star="">
+              <a href="/d/coder_gather/p/oda0012"><b>oda0012</b>
+&nbsp;&nbsp;回文字符串[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3AA%E5%8D%B7">A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E9%80%BB%E8%BE%91">逻辑</a></li></ul>
+        </td>
+        <td class="col--ac-tried">45 / 127</td>
+        <td class="col--difficulty">5</td>
+      </tr>      <tr data-pid="216">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">216</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/216"  data-star="">
+              <a href="/d/coder_gather/p/oda0013"><b>oda0013</b>
+&nbsp;&nbsp;获取最大软件版本号[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%AD%97%E7%AC%A6%E4%B8%B2">字符串</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3AA%E5%8D%B7">A卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">40 / 88</td>
+        <td class="col--difficulty">4</td>
+      </tr>      <tr data-pid="217">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">217</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/217"  data-star="">
+              <a href="/d/coder_gather/p/oda0014"><b>oda0014</b>
+&nbsp;&nbsp;积木最远距离[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">数据结构</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%93%88%E5%B8%8C%E8%A1%A8">哈希表</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3AA%E5%8D%B7">A卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">39 / 92</td>
+        <td class="col--difficulty">4</td>
+      </tr>      <tr data-pid="218">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">218</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/218"  data-star="">
+              <a href="/d/coder_gather/p/oda0015"><b>oda0015</b>
+&nbsp;&nbsp;计算数组中心位置[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3AA%E5%8D%B7">A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%A4%A7%E6%95%B0%E8%AE%A1%E7%AE%97">大数计算</a></li></ul>
+        </td>
+        <td class="col--ac-tried">36 / 181</td>
+        <td class="col--difficulty">7</td>
+      </tr>      <tr data-pid="219">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">219</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/219"  data-star="">
+              <a href="/d/coder_gather/p/oda0016"><b>oda0016</b>
+&nbsp;&nbsp;快递业务站[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3AA%E5%8D%B7">A卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">31 / 112</td>
+        <td class="col--difficulty">6</td>
+      </tr>      <tr data-pid="220">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">220</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/220"  data-star="">
+              <a href="/d/coder_gather/p/oda0017"><b>oda0017</b>
+&nbsp;&nbsp;密室逃生游戏[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">数据结构</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%93%88%E5%B8%8C%E8%A1%A8">哈希表</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3AA%E5%8D%B7">A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">83 / 267</td>
+        <td class="col--difficulty">6</td>
+      </tr>      <tr data-pid="221">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">221</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/221"  data-star="">
+              <a href="/d/coder_gather/p/oda0018"><b>oda0018</b>
+&nbsp;&nbsp;匿名信[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3AA%E5%8D%B7">A卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">29 / 77</td>
+        <td class="col--difficulty">5</td>
+      </tr>      <tr data-pid="222">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">222</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/222"  data-star="">
+              <a href="/d/coder_gather/p/oda0019"><b>oda0019</b>
+&nbsp;&nbsp;人数最多的站点[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3AA%E5%8D%B7">A卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">26 / 226</td>
+        <td class="col--difficulty">9</td>
+      </tr>      <tr data-pid="223">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">223</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/223"  data-star="">
+              <a href="/d/coder_gather/p/oda0020"><b>oda0020</b>
+&nbsp;&nbsp;日志限流[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3AA%E5%8D%B7">A卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">27 / 98</td>
+        <td class="col--difficulty">6</td>
+      </tr>      <tr data-pid="224">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">224</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/224"  data-star="">
+              <a href="/d/coder_gather/p/oda0021"><b>oda0021</b>
+&nbsp;&nbsp;识图谱新词挖掘[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3AA%E5%8D%B7">A卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">21 / 72</td>
+        <td class="col--difficulty">6</td>
+      </tr>      <tr data-pid="225">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">225</td>
+                              <td class="col--status record-status--border edit-mode-hide pass">
+  <div class="col--status__text">
+    <span class="icon record-status--icon pass"></span>
+    <a 
+      href="/d/coder_gather/record/685a7fb51273efb092b8b8df"
+      class="record-status--text pass"
+    >
+            <span style="color: #25ad40">100</span>
+            Accepted
+    </a>
+  </div>
+  </td>
+
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/225"  data-star="">
+              <a href="/d/coder_gather/p/oda0022"><b>oda0022</b>
+&nbsp;&nbsp;文件目录大小[100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3ADFS">DFS</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%93%88%E5%B8%8C">哈希</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025B%E5%8D%B7">2025B卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">313 / 1053</td>
+        <td class="col--difficulty">6</td>
+      </tr>      <tr data-pid="226">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">226</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/226"  data-star="">
+              <a href="/d/coder_gather/p/oda0023"><b>oda0023</b>
+&nbsp;&nbsp;最长的顺子[100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80">算法基础</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E8%B4%AA%E5%BF%83">贪心</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025B%E5%8D%B7">2025B卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E6%9C%BA%E4%BD%8DA%E5%8D%B7">双机位A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E6%9C%BA%E4%BD%8DB%E5%8D%B7">双机位B卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E6%9C%BA%E4%BD%8DC%E5%8D%B7">双机位C卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">371 / 1897</td>
+        <td class="col--difficulty">7</td>
+      </tr>      <tr data-pid="227">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">227</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/227"  data-star="">
+              <a href="/d/coder_gather/p/oda0024"><b>oda0024</b>
+&nbsp;&nbsp;天然蓄水库[200分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E6%8C%87%E9%92%88">双指针</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E6%9C%BA%E4%BD%8DC%E5%8D%B7">双机位C卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">142 / 1808</td>
+        <td class="col--difficulty">9</td>
+      </tr>      <tr data-pid="228">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">228</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/228"  data-star="">
+              <a href="/d/coder_gather/p/oda0025"><b>oda0025</b>
+&nbsp;&nbsp;投篮大赛</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80">算法基础</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E6%A8%A1%E6%8B%9F">模拟</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025B%E5%8D%B7">2025B卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">247 / 792</td>
+        <td class="col--difficulty">6</td>
+      </tr>      <tr data-pid="229">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">229</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/229"  data-star="">
+              <a href="/d/coder_gather/p/oda0026"><b>oda0026</b>
+&nbsp;&nbsp;二叉树的中序遍历[A卷 200分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">数据结构</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E6%A0%88">栈</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E9%80%92%E5%BD%92">递归</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E4%BA%8C%E5%8F%89%E6%A0%91">二叉树</a></li></ul>
+        </td>
+        <td class="col--ac-tried">185 / 717</td>
+        <td class="col--difficulty">7</td>
+      </tr>      <tr data-pid="230">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">230</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/230"  data-star="">
+              <a href="/d/coder_gather/p/oda0027"><b>oda0027</b>
+&nbsp;&nbsp;区间交集[200 分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8C%BA%E9%97%B4%E5%90%88%E5%B9%B6">区间合并</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8C%BA%E9%97%B4%E4%BA%A4%E9%9B%86">区间交集</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025B%E5%8D%B7">2025B卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E6%9C%BA%E4%BD%8DA%E5%8D%B7">双机位A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E6%9C%BA%E4%BD%8DC%E5%8D%B7">双机位C卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">248 / 1223</td>
+        <td class="col--difficulty">7</td>
+      </tr>      <tr data-pid="231">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">231</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/231"  data-star="">
+              <a href="/d/coder_gather/p/oda0028"><b>oda0028</b>
+&nbsp;&nbsp;数据分类[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E6%95%B0%E5%AD%A6">数学</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E4%BD%8D%E8%BF%90%E7%AE%97">位运算</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025B%E5%8D%B7">2025B卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">258 / 1601</td>
+        <td class="col--difficulty">8</td>
+      </tr>      <tr data-pid="232">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">232</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/232"  data-star="">
+              <a href="/d/coder_gather/p/oda0029"><b>oda0029</b>
+&nbsp;&nbsp;最少数量线段覆盖[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8C%BA%E9%97%B4%E5%90%88%E5%B9%B6">区间合并</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8C%BA%E9%97%B4%E8%A6%86%E7%9B%96">区间覆盖</a></li></ul>
+        </td>
+        <td class="col--ac-tried">109 / 595</td>
+        <td class="col--difficulty">8</td>
+      </tr>      <tr data-pid="233">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">233</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/233"  data-star="">
+              <a href="/d/coder_gather/p/oda0030"><b>oda0030</b>
+&nbsp;&nbsp;矩阵最大值[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80">算法基础</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E6%9A%B4%E5%8A%9B">暴力</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">158 / 379</td>
+        <td class="col--difficulty">5</td>
+      </tr>      <tr data-pid="234">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">234</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/234"  data-star="">
+              <a href="/d/coder_gather/p/oda0031"><b>oda0031</b>
+&nbsp;&nbsp;新学校选址[200分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E6%95%B0%E5%AD%A6%E5%AE%9A%E7%90%86">数学定理</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E6%9C%BA%E4%BD%8DA%E5%8D%B7">双机位A卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">187 / 440</td>
+        <td class="col--difficulty">4</td>
+      </tr>      <tr data-pid="235">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">235</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/235"  data-star="">
+              <a href="/d/coder_gather/p/oda0032"><b>oda0032</b>
+&nbsp;&nbsp;优选核酸检测点[200分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80">算法基础</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E6%A8%A1%E6%8B%9F">模拟</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E6%9C%BA%E4%BD%8DC%E5%8D%B7">双机位C卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">56 / 644</td>
+        <td class="col--difficulty">8</td>
+      </tr>      <tr data-pid="236">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">236</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/236"  data-star="">
+              <a href="/d/coder_gather/p/oda0033"><b>oda0033</b>
+&nbsp;&nbsp;告警抑制[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E9%9B%86%E5%90%88">集合</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%93%88%E5%B8%8C">哈希</a></li></ul>
+        </td>
+        <td class="col--ac-tried">122 / 723</td>
+        <td class="col--difficulty">5</td>
+      </tr>      <tr data-pid="237">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">237</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/237"  data-star="">
+              <a href="/d/coder_gather/p/oda0034"><b>oda0034</b>
+&nbsp;&nbsp;报文回路[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E9%80%BB%E8%BE%91">逻辑</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%93%88%E5%B8%8C">哈希</a></li></ul>
+        </td>
+        <td class="col--ac-tried">126 / 374</td>
+        <td class="col--difficulty">4</td>
+      </tr>      <tr data-pid="238">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">238</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/238"  data-star="">
+              <a href="/d/coder_gather/p/oda0035"><b>oda0035</b>
+&nbsp;&nbsp;攀登者2[200分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80">算法基础</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E6%A8%A1%E6%8B%9F">模拟</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E9%80%BB%E8%BE%91">逻辑</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025C%E5%8D%B7">2025C卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">94 / 587</td>
+        <td class="col--difficulty">9</td>
+      </tr>      <tr data-pid="239">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">239</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/239"  data-star="">
+              <a href="/d/coder_gather/p/oda0036"><b>oda0036</b>
+&nbsp;&nbsp;阿里巴巴找宝箱II[A 卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80">算法基础</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E8%B4%AA%E5%BF%83">贪心</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">146 / 441</td>
+        <td class="col--difficulty">5</td>
+      </tr>      <tr data-pid="240">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">240</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/240"  data-star="">
+              <a href="/d/coder_gather/p/oda0037"><b>oda0037</b>
+&nbsp;&nbsp;阿里巴巴找黄金宝箱III(A卷 100分)</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%93%88%E5%B8%8C">哈希</a></li></ul>
+        </td>
+        <td class="col--ac-tried">124 / 589</td>
+        <td class="col--difficulty">7</td>
+      </tr>      <tr data-pid="241">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">241</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/241"  data-star="">
+              <a href="/d/coder_gather/p/oda0038"><b>oda0038</b>
+&nbsp;&nbsp;阿里巴巴找黄金宝箱Ⅳ[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">数据结构</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8D%95%E8%B0%83%E6%A0%88">单调栈</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">125 / 422</td>
+        <td class="col--difficulty">8</td>
+      </tr>      <tr data-pid="242">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">242</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/242"  data-star="">
+              <a href="/d/coder_gather/p/oda0039"><b>oda0039</b>
+&nbsp;&nbsp;座位调整[100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80">算法基础</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E8%B4%AA%E5%BF%83">贪心</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025C%E5%8D%B7">2025C卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">149 / 446</td>
+        <td class="col--difficulty">6</td>
+      </tr>      <tr data-pid="243">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">243</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/243"  data-star="">
+              <a href="/d/coder_gather/p/oda0040"><b>oda0040</b>
+&nbsp;&nbsp;检查是否存在满足条件的数字组合</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80">算法基础</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E6%9A%B4%E5%8A%9B">暴力</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">112 / 346</td>
+        <td class="col--difficulty">5</td>
+      </tr>      <tr data-pid="244">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">244</td>
+                              <td class="col--status record-status--border edit-mode-hide pass">
+  <div class="col--status__text">
+    <span class="icon record-status--icon pass"></span>
+    <a 
+      href="/d/coder_gather/record/68a0162f159353e152b7f4c0"
+      class="record-status--text pass"
+    >
+            <span style="color: #25ad40">100</span>
+            Accepted
+    </a>
+  </div>
+  </td>
+
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/244"  data-star="">
+              <a href="/d/coder_gather/p/oda0041"><b>oda0041</b>
+&nbsp;&nbsp;猴子爬山[100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92">动态规划</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025C%E5%8D%B7">2025C卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E6%9C%BA%E4%BD%8DA%E5%8D%B7">双机位A卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">251 / 531</td>
+        <td class="col--difficulty">4</td>
+      </tr>      <tr data-pid="245">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">245</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/245"  data-star="">
+              <a href="/d/coder_gather/p/oda0042"><b>oda0042</b>
+&nbsp;&nbsp;全量和已占用字符集[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%AD%97%E7%AC%A6%E4%B8%B2">字符串</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%93%88%E5%B8%8C">哈希</a></li></ul>
+        </td>
+        <td class="col--ac-tried">106 / 505</td>
+        <td class="col--difficulty">5</td>
+      </tr>      <tr data-pid="246">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">246</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/246"  data-star="">
+              <a href="/d/coder_gather/p/oda0043"><b>oda0043</b>
+&nbsp;&nbsp;微服务的集成测试[100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3ADFS">DFS</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025C%E5%8D%B7">2025C卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E6%9C%BA%E4%BD%8DC%E5%8D%B7">双机位C卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">226 / 702</td>
+        <td class="col--difficulty">6</td>
+      </tr>      <tr data-pid="247">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">247</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/247"  data-star="">
+              <a href="/d/coder_gather/p/oda0044"><b>oda0044</b>
+&nbsp;&nbsp;二叉树的广度优先遍历[200分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E4%BA%8C%E5%8F%89%E6%A0%91">二叉树</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3ABFS">BFS</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025B%E5%8D%B7">2025B卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025C%E5%8D%B7">2025C卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E6%9C%BA%E4%BD%8DC%E5%8D%B7">双机位C卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">234 / 611</td>
+        <td class="col--difficulty">8</td>
+      </tr>      <tr data-pid="248">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">248</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/248"  data-star="">
+              <a href="/d/coder_gather/p/oda0045"><b>oda0045</b>
+&nbsp;&nbsp;经典屏保问题[A卷 100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E6%95%B0%E5%AD%A6%E5%8E%9F%E7%90%86">数学原理</a></li></ul>
+        </td>
+        <td class="col--ac-tried">94 / 186</td>
+        <td class="col--difficulty">6</td>
+      </tr>      <tr data-pid="249">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">249</td>
+                              <td class="col--status record-status--border edit-mode-hide pass">
+  <div class="col--status__text">
+    <span class="icon record-status--icon pass"></span>
+    <a 
+      href="/d/coder_gather/record/68aadd45fc8c1d02b7b471a8"
+      class="record-status--text pass"
+    >
+            <span style="color: #25ad40">100</span>
+            Accepted
+    </a>
+  </div>
+  </td>
+
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/249"  data-star="">
+              <a href="/d/coder_gather/p/oda0046"><b>oda0046</b>
+&nbsp;&nbsp;数组去重和排序[100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80">算法基础</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E6%8E%92%E5%BA%8F">排序</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%93%88%E5%B8%8C">哈希</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025C%E5%8D%B7">2025C卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">161 / 538</td>
+        <td class="col--difficulty">4</td>
+      </tr>      <tr data-pid="250">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">250</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/250"  data-star="">
+              <a href="/d/coder_gather/p/oda0047"><b>oda0047</b>
+&nbsp;&nbsp;按单词下标区间翻转文章内容</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E6%8C%87%E9%92%88">双指针</a></li></ul>
+        </td>
+        <td class="col--ac-tried">106 / 372</td>
+        <td class="col--difficulty">6</td>
+      </tr>      <tr data-pid="251">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">251</td>
+                              <td class="col--status record-status--border edit-mode-hide pass">
+  <div class="col--status__text">
+    <span class="icon record-status--icon pass"></span>
+    <a 
+      href="/d/coder_gather/record/68ab191b6391e8283d2f3e58"
+      class="record-status--text pass"
+    >
+            <span style="color: #25ad40">100</span>
+            Accepted
+    </a>
+  </div>
+  </td>
+
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/251"  data-star="">
+              <a href="/d/coder_gather/p/oda0048"><b>oda0048</b>
+&nbsp;&nbsp;最大股票收益[100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80">算法基础</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E8%B4%AA%E5%BF%83">贪心</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025C%E5%8D%B7">2025C卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">131 / 345</td>
+        <td class="col--difficulty">5</td>
+      </tr>      <tr data-pid="252">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">252</td>
+                              <td class="col--status record-status--border edit-mode-hide"></td>
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/252"  data-star="">
+              <a href="/d/coder_gather/p/oda0049"><b>oda0049</b>
+&nbsp;&nbsp;数值同化[100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3ABFS">BFS</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025B%E5%8D%B7">2025B卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025C%E5%8D%B7">2025C卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E6%9C%BA%E4%BD%8DA%E5%8D%B7">双机位A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E6%9C%BA%E4%BD%8DC%E5%8D%B7">双机位C卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">249 / 734</td>
+        <td class="col--difficulty">6</td>
+      </tr>      <tr data-pid="253">
+        <td class="col--checkbox display-mode-hide">
+          <label class="compact checkbox">
+            <input type="checkbox" data-checkbox-group="problem" data-checkbox-range>
+          </label>
+        </td>
+        <td class="col--pid display-mode-hide">253</td>
+                              <td class="col--status record-status--border edit-mode-hide pass">
+  <div class="col--status__text">
+    <span class="icon record-status--icon pass"></span>
+    <a 
+      href="/d/coder_gather/record/68ac16ce6391e8283d321ba6"
+      class="record-status--text pass"
+    >
+            <span style="color: #25ad40">100</span>
+            Accepted
+    </a>
+  </div>
+  </td>
+
+                          <td class="col--name col--problem-name" data-star-action="/d/coder_gather/p/253"  data-star="">
+              <a href="/d/coder_gather/p/oda0050"><b>oda0050</b>
+&nbsp;&nbsp;生成回文素数[100分]</a><ul class="problem__tags">        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025A%E5%8D%B7">2025A卷</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E6%95%B0%E5%AD%A6%E5%8E%9F%E7%90%86">数学原理</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E6%8C%87%E9%92%88">双指针</a></li>        <li class="problem__tag"><a class="problem__tag-link" href="/d/coder_gather/p?q=category%3A2025C%E5%8D%B7">2025C卷</a></li></ul>
+        </td>
+        <td class="col--ac-tried">126 / 343</td>
+        <td class="col--difficulty">5</td>
+      </tr></tbody>
+  </table>
+    <ul class="pager pager-bottom"><li>
+          <span class="pager__item current">1</span>
+        </li><li>
+          <a class="pager__item page link" href="?page=2">2</a>
+        </li><li>
+          <a class="pager__item page link" href="?page=3">3</a>
+        </li><li>
+          <a class="pager__item page link" href="?page=4">4</a>
+        </li><li>
+          <a class="pager__item page link" href="?page=5">5</a>
+        </li><li>
+          <a class="pager__item page link" href="?page=6">6</a>
+        </li><li>
+          <a class="pager__item page link" href="?page=7">7</a>
+        </li><li>
+          <a class="pager__item page link" href="?page=8">8</a>
+        </li><li>
+          <a class="pager__item page link" href="?page=9">9</a>
+        </li><li>
+          <a class="pager__item page link" href="?page=10">10</a>
+        </li><li>
+          <a class="pager__item page link" href="?page=11">11</a>
+        </li><li>
+          <a class="pager__item next link" href="?page=2">下一页 ›</a>
+        </li><li>
+          <a class="pager__item last link" href="?page=11">末页 »</a>
+        </li></ul>
+
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="medium-3 columns">
+              <div class="section side nojs--hide">
+          <ol class="menu">
+            <a href="javascript:;" class="menu__link edit-mode-hide" name="enter-edit-mode">
+              <span class="icon icon-edit"></span>
+              进入编辑模式
+            </a>
+            <a href="javascript:;" class="menu__link display-mode-hide" name="leave-edit-mode">
+              <span class="icon icon-edit"></span>
+              离开编辑模式
+            </a>
+            <div id="problem_selection" class="display-mode-hide"></div>
+                        <a href="javascript:;" class="menu__link display-mode-hide" name="copy_selected_problems">
+              <span class="icon icon-copy"></span>
+              复制选中
+            </a>
+          </ol>
+        </div>
+                  <div class="section side">
+        <div class="section__header edit-mode-hide">
+          <h1 class="section__title">分类</h1>
+        </div>
+        <div class="section__body">
+          <ul class="group-list" data-widget-cf-container>
+  <li class="group-list__item">
+      <h2 class="section__title">
+        <a href="/d/coder_gather/p?q=category%3A%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80">算法基础</a>
+      </h2>
+              <ol class="chip-list"><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%9A%B4%E5%8A%9B">暴力</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%9E%9A%E4%B8%BE">枚举</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%A8%A1%E6%8B%9F">模拟</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E9%80%92%E5%BD%92%20%26%20%E5%88%86%E6%B2%BB">递归 &amp; 分治</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E8%B4%AA%E5%BF%83">贪心</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%8E%92%E5%BA%8F">排序</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%89%8D%E7%BC%80%E5%92%8C%20%26%20%E5%B7%AE%E5%88%86">前缀和 &amp; 差分</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E4%BA%8C%E5%88%86">二分</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%80%8D%E5%A2%9E">倍增</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%9E%84%E9%80%A0">构造</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%89%93%E8%A1%A8">打表</a>
+            </li></ol>
+          </li><li class="group-list__item">
+      <h2 class="section__title">
+        <a href="/d/coder_gather/p?q=category%3A%E6%90%9C%E7%B4%A2">搜索</a>
+      </h2>
+              <ol class="chip-list"><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">深度优先搜索</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2">广度优先搜索</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E5%90%91%E6%90%9C%E7%B4%A2">双向搜索</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%90%AF%E5%8F%91%E5%BC%8F%E6%90%9C%E7%B4%A2">启发式搜索</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3AA*">A*</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E8%BF%AD%E4%BB%A3%E5%8A%A0%E6%B7%B1%E6%90%9C%E7%B4%A2">迭代加深搜索</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3AIDA*">IDA*</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%9B%9E%E6%BA%AF%E6%B3%95">回溯法</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3ADancing%20Links">Dancing Links</a>
+            </li></ol>
+          </li><li class="group-list__item">
+      <h2 class="section__title">
+        <a href="/d/coder_gather/p?q=category%3A%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92">动态规划</a>
+      </h2>
+              <ol class="chip-list"><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2">记忆化搜索</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E7%BA%BF%E6%80%A7%20DP">线性 DP</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E8%83%8C%E5%8C%85%20DP">背包 DP</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%8C%BA%E9%97%B4%20DP">区间 DP</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3ADAG%20%E4%B8%8A%20DP">DAG 上 DP</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%A0%91%E5%BD%A2%20DP">树形 DP</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E7%8A%B6%E5%8E%8B%20DP">状压 DP</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%95%B0%E4%BD%8D%20DP">数位 DP</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%8F%92%E5%A4%B4%20DP">插头 DP</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E8%AE%A1%E6%95%B0%20DP">计数 DP</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%8A%A8%E6%80%81%20DP">动态 DP</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%A6%82%E7%8E%87%20DP">概率 DP</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97%E4%BC%98%E5%8C%96">单调队列优化</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%96%9C%E7%8E%87%E4%BC%98%E5%8C%96">斜率优化</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%9B%9B%E8%BE%B9%E5%BD%A2%E4%B8%8D%E7%AD%89%E5%BC%8F%E4%BC%98%E5%8C%96">四边形不等式优化</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E7%8A%B6%E6%80%81%E8%AE%BE%E8%AE%A1%E4%BC%98%E5%8C%96">状态设计优化</a>
+            </li></ol>
+          </li><li class="group-list__item">
+      <h2 class="section__title">
+        <a href="/d/coder_gather/p?q=category%3A%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95">计算几何</a>
+      </h2>
+              <ol class="chip-list"><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3APick%20%E5%AE%9A%E7%90%86">Pick 定理</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E4%B8%89%E8%A7%92%E5%89%96%E5%88%86">三角剖分</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%87%B8%E5%8C%85">凸包</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%89%AB%E6%8F%8F%E7%BA%BF">扫描线</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%97%8B%E8%BD%AC%E5%8D%A1%E5%A3%B3">旋转卡壳</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%8D%8A%E5%B9%B3%E9%9D%A2%E4%BA%A4">半平面交</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%B9%B3%E9%9D%A2%E6%9C%80%E8%BF%91%E7%82%B9%E5%AF%B9">平面最近点对</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E9%9A%8F%E6%9C%BA%E5%A2%9E%E9%87%8F%E6%B3%95">随机增量法</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%8F%8D%E6%BC%94%E5%8F%98%E6%8D%A2">反演变换</a>
+            </li></ol>
+          </li><li class="group-list__item">
+      <h2 class="section__title">
+        <a href="/d/coder_gather/p?q=category%3A%E6%95%B0%E5%AD%A6">数学</a>
+      </h2>
+              <ol class="chip-list"><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E4%BD%8D%E8%BF%90%E7%AE%97">位运算</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%BF%AB%E9%80%9F%E5%B9%82">快速幂</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E9%AB%98%E7%B2%BE%E5%BA%A6">高精度</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%99%AE%E9%80%9A%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0">普通生成函数</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%8C%87%E6%95%B0%E7%94%9F%E6%88%90%E5%87%BD%E6%95%B0">指数生成函数</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%90%91%E9%87%8F">向量</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E7%9F%A9%E9%98%B5">矩阵</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E9%AB%98%E6%96%AF%E6%B6%88%E5%85%83">高斯消元</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E7%BA%BF%E6%80%A7%E5%9F%BA">线性基</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92">线性规划</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%AE%B9%E6%96%A5">容斥</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E7%BB%84%E5%90%88%E8%AE%A1%E6%95%B0">组合计数</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E7%A6%BB%E6%95%A3%E5%AF%B9%E6%95%B0">离散对数</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%8D%95%E7%BA%AF%E5%BD%A2%E7%AE%97%E6%B3%95">单纯形算法</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%A6%82%E7%8E%87">概率</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E7%BD%AE%E6%8D%A2%E7%BE%A4">置换群</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97">斐波那契数列</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E7%89%9B%E9%A1%BF%E8%BF%AD%E4%BB%A3%E6%B3%95">牛顿迭代法</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%95%B0%E5%80%BC%E7%A7%AF%E5%88%86">数值积分</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%88%86%E6%AE%B5%E6%89%93%E8%A1%A8">分段打表</a>
+            </li></ol>
+          </li><li class="group-list__item">
+      <h2 class="section__title">
+        <a href="/d/coder_gather/p?q=category%3A%E6%95%B0%E8%AE%BA">数论</a>
+      </h2>
+              <ol class="chip-list"><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3AMeissel-Lehmer%20%E7%AE%97%E6%B3%95">Meissel-Lehmer 算法</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0">最大公约数</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0">欧拉函数</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E7%AD%9B%E6%B3%95">筛法</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%AC%A7%E6%8B%89%E5%AE%9A%E7%90%86">欧拉定理</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E8%B4%B9%E9%A9%AC%E5%B0%8F%E5%AE%9A%E7%90%86">费马小定理</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E7%B1%BB%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95">类欧几里得算法</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E8%A3%B4%E8%9C%80%E5%AE%9A%E7%90%86">裴蜀定理</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E4%B9%98%E6%B3%95%E9%80%86%E5%85%83">乘法逆元</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E7%BA%BF%E6%80%A7%E5%90%8C%E4%BD%99%E6%96%B9%E7%A8%8B">线性同余方程</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E4%BA%8C%E6%AC%A1%E5%89%A9%E4%BD%99">二次剩余</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3ABSGS">BSGS</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%8E%9F%E6%A0%B9">原根</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%8D%A2%E5%8D%A1%E6%96%AF%E5%AE%9A%E7%90%86">卢卡斯定理</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94">莫比乌斯反演</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E5%8F%8D%E6%BC%94">拉格朗日反演</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%9D%9C%E6%95%99%E7%AD%9B">杜教筛</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3APowerful%20Number%20%E7%AD%9B">Powerful Number 筛</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3AMin_25%20%E7%AD%9B">Min_25 筛</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%B4%B2%E9%98%81%E7%AD%9B">洲阁筛</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%88%86%E8%A7%A3%E8%B4%A8%E5%9B%A0%E6%95%B0">分解质因数</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E8%BF%9E%E5%88%86%E6%95%B0">连分数</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3AStern-Brocot%20%E6%A0%91%E4%B8%8E%20Farey%20%E5%BA%8F%E5%88%97">Stern-Brocot 树与 Farey 序列</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3APell%20%E6%96%B9%E7%A8%8B">Pell 方程</a>
+            </li></ol>
+          </li><li class="group-list__item">
+      <h2 class="section__title">
+        <a href="/d/coder_gather/p?q=category%3A%E5%AD%97%E7%AC%A6%E4%B8%B2">字符串</a>
+      </h2>
+              <ol class="chip-list"><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%93%88%E5%B8%8C">字符串哈希</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%AD%97%E5%85%B8%E6%A0%91">字典树</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3AKMP">KMP</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3ABoyer-Moore">Boyer-Moore</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3AZ%20%E5%87%BD%E6%95%B0%EF%BC%88%E6%89%A9%E5%B1%95%20KMP%EF%BC%89">Z 函数（扩展 KMP）</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3AAC%20%E8%87%AA%E5%8A%A8%E6%9C%BA">AC 自动机</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%90%8E%E7%BC%80%E6%95%B0%E7%BB%84">后缀数组</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%90%8E%E7%BC%80%E8%87%AA%E5%8A%A8%E6%9C%BA">后缀自动机</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%90%8E%E7%BC%80%E5%B9%B3%E8%A1%A1%E6%A0%91">后缀平衡树</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%B9%BF%E4%B9%89%E5%90%8E%E7%BC%80%E8%87%AA%E5%8A%A8%E6%9C%BA">广义后缀自动机</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3AManacher">Manacher</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%9B%9E%E6%96%87%E6%A0%91">回文树</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%BA%8F%E5%88%97%E8%87%AA%E5%8A%A8%E6%9C%BA">序列自动机</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%9C%80%E5%B0%8F%E8%A1%A8%E7%A4%BA%E6%B3%95">最小表示法</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3ALyndon%20%E5%88%86%E8%A7%A3">Lyndon 分解</a>
+            </li></ol>
+          </li><li class="group-list__item">
+      <h2 class="section__title">
+        <a href="/d/coder_gather/p?q=category%3A%E5%9B%BE%E8%AE%BA">图论</a>
+      </h2>
+              <ol class="chip-list"><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%A0%91%E7%9A%84%E7%9B%B4%E5%BE%84">树的直径</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%A0%91%E4%B8%8A%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88">树上最近公共祖先</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%A0%91%E7%9A%84%E9%87%8D%E5%BF%83">树的重心</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86">树链剖分</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%A0%91%E4%B8%8A%E5%90%AF%E5%8F%91%E5%BC%8F%E5%90%88%E5%B9%B6">树上启发式合并</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E8%99%9A%E6%A0%91">虚树</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%A0%91%E5%88%86%E6%B2%BB">树分治</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%8A%A8%E6%80%81%E6%A0%91%E5%88%86%E6%B2%BB">动态树分治</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3AAHU%20%E7%AE%97%E6%B3%95">AHU 算法</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%A0%91%E5%93%88%E5%B8%8C">树哈希</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E7%9F%A9%E9%98%B5%E6%A0%91%E5%AE%9A%E7%90%86">矩阵树定理</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F">拓扑排序</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91">最小生成树</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%96%AF%E5%9D%A6%E7%BA%B3%E6%A0%91">斯坦纳树</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%9C%80%E5%B0%8F%E6%A0%91%E5%BD%A2%E5%9B%BE">最小树形图</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%9C%80%E5%B0%8F%E7%9B%B4%E5%BE%84%E7%94%9F%E6%88%90%E6%A0%91">最小直径生成树</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%9C%80%E7%9F%AD%E8%B7%AF">最短路</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%8B%86%E7%82%B9">拆点</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%B7%AE%E5%88%86%E7%BA%A6%E6%9D%9F">差分约束</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E7%AC%AC%20K%20%E7%9F%AD%E8%B7%AF">第 K 短路</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%90%8C%E4%BD%99%E6%9C%80%E7%9F%AD%E8%B7%AF">同余最短路</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F">强连通分量</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%8F%8C%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F">双连通分量</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%89%B2%E7%82%B9%20%26%20%E6%A1%A5">割点 &amp; 桥</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%9C%86%E6%96%B9%E6%A0%91">圆方树</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A2-SAT">2-SAT</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%AC%A7%E6%8B%89%E5%9B%BE">欧拉图</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%93%88%E5%AF%86%E9%A1%BF%E5%9B%BE">哈密顿图</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E4%BA%8C%E5%88%86%E5%9B%BE">二分图</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%9C%80%E5%B0%8F%E7%8E%AF">最小环</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%B9%B3%E9%9D%A2%E5%9B%BE">平面图</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E7%BD%91%E7%BB%9C%E6%B5%81">网络流</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%9C%80%E5%A4%A7%E6%B5%81">最大流</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%9C%80%E5%B0%8F%E5%89%B2">最小割</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E8%B4%B9%E7%94%A8%E6%B5%81">费用流</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E4%B8%8A%E4%B8%8B%E7%95%8C%E7%BD%91%E7%BB%9C%E6%B5%81">上下界网络流</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3AStoer-Wagner%20%E7%AE%97%E6%B3%95">Stoer-Wagner 算法</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E4%BA%8C%E5%88%86%E5%9B%BE%E6%9C%80%E5%A4%A7%E5%8C%B9%E9%85%8D">二分图最大匹配</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E4%BA%8C%E5%88%86%E5%9B%BE%E6%9C%80%E5%A4%A7%E6%9D%83%E5%8C%B9%E9%85%8D">二分图最大权匹配</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E4%B8%80%E8%88%AC%E5%9B%BE%E6%9C%80%E5%A4%A7%E5%8C%B9%E9%85%8D">一般图最大匹配</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E4%B8%80%E8%88%AC%E5%9B%BE%E6%9C%80%E5%A4%A7%E6%9D%83%E5%8C%B9%E9%85%8D">一般图最大权匹配</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3APrufer%20%E5%BA%8F%E5%88%97">Prufer 序列</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3ALGV%20%E5%BC%95%E7%90%86">LGV 引理</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%BC%A6%E5%9B%BE">弦图</a>
+            </li></ol>
+          </li><li class="group-list__item">
+      <h2 class="section__title">
+        <a href="/d/coder_gather/p?q=category%3A%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6">组合数学</a>
+      </h2>
+              <ol class="chip-list"><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88">排列组合</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%8D%A1%E7%89%B9%E5%85%B0%E6%95%B0">卡特兰数</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%96%AF%E7%89%B9%E6%9E%97%E6%95%B0">斯特林数</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E8%B4%9D%E5%B0%94%E6%95%B0">贝尔数</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%95%B0">伯努利数</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%BA%B7%E6%89%98%E5%B1%95%E5%BC%80">康托展开</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%AE%B9%E6%96%A5%E5%8E%9F%E7%90%86">容斥原理</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%8A%BD%E5%B1%89%E5%8E%9F%E7%90%86">抽屉原理</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%AC%A7%E6%8B%89%E6%95%B0">欧拉数</a>
+            </li></ol>
+          </li><li class="group-list__item">
+      <h2 class="section__title">
+        <a href="/d/coder_gather/p?q=category%3A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">数据结构</a>
+      </h2>
+              <ol class="chip-list"><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%A0%88">栈</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E9%98%9F%E5%88%97">队列</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E9%93%BE%E8%A1%A8">链表</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%93%88%E5%B8%8C%E8%A1%A8">哈希表</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%B9%B6%E6%9F%A5%E9%9B%86">并查集</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E4%BA%8C%E5%8F%89%E5%A0%86">二叉堆</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E9%85%8D%E5%AF%B9%E5%A0%86">配对堆</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%B7%A6%E5%81%8F%E6%A0%91">左偏树</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%9D%97%E7%8A%B6%E6%95%B0%E7%BB%84">块状数组</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%9D%97%E7%8A%B6%E9%93%BE%E8%A1%A8">块状链表</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%A0%91%E5%88%86%E5%9D%97">树分块</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3ASqrt%20Tree">Sqrt Tree</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%8D%95%E8%B0%83%E6%A0%88">单调栈</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97">单调队列</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3AST%20%E8%A1%A8">ST 表</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84">树状数组</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E7%BA%BF%E6%AE%B5%E6%A0%91">线段树</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%9D%8E%E8%B6%85%E7%BA%BF%E6%AE%B5%E6%A0%91">李超线段树</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%8C%BA%E9%97%B4%E6%9C%80%E5%80%BC%E6%93%8D%E4%BD%9C%20%26%20%E5%8C%BA%E9%97%B4%E5%8E%86%E5%8F%B2%E6%9C%80%E5%80%BC">区间最值操作 &amp; 区间历史最值</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%88%92%E5%88%86%E6%A0%91">划分树</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%B9%B3%E8%A1%A1%E6%A0%91">平衡树</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E8%B7%B3%E8%A1%A8">跳表</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84">可持久化数据结构</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%A0%91%E5%A5%97%E6%A0%91">树套树</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3AK-D%20Tree">K-D Tree</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E7%8F%82%E6%9C%B5%E8%8E%89%E6%A0%91">珂朵莉树</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%8A%A8%E6%80%81%E6%A0%91">动态树</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%9E%90%E5%90%88%E6%A0%91">析合树</a>
+            </li></ol>
+          </li><li class="group-list__item">
+      <h2 class="section__title">
+        <a href="/d/coder_gather/p?q=category%3A%E5%A4%9A%E9%A1%B9%E5%BC%8F">多项式</a>
+      </h2>
+              <ol class="chip-list"><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5%E6%8F%92%E5%80%BC">拉格朗日插值</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%BF%AB%E9%80%9F%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2">快速傅里叶变换</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%BF%AB%E9%80%9F%E6%95%B0%E8%AE%BA%E5%8F%98%E6%8D%A2">快速数论变换</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%BF%AB%E9%80%9F%E6%B2%83%E5%B0%94%E4%BB%80%E5%8F%98%E6%8D%A2">快速沃尔什变换</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%A4%9A%E9%A1%B9%E5%BC%8F%E6%B1%82%E9%80%86">多项式求逆</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%A4%9A%E9%A1%B9%E5%BC%8F%E5%BC%80%E6%96%B9">多项式开方</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%A4%9A%E9%A1%B9%E5%BC%8F%E9%99%A4%E6%B3%95%2F%E5%8F%96%E6%A8%A1">多项式除法/取模</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%A4%9A%E9%A1%B9%E5%BC%8F%E5%AF%B9%E6%95%B0%E5%87%BD%E6%95%B0%2F%E6%8C%87%E6%95%B0%E5%87%BD%E6%95%B0">多项式对数函数/指数函数</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%A4%9A%E9%A1%B9%E5%BC%8F%E7%89%9B%E9%A1%BF%E8%BF%AD%E4%BB%A3">多项式牛顿迭代</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%A4%9A%E9%A1%B9%E5%BC%8F%E5%A4%9A%E7%82%B9%E6%B1%82%E5%80%BC%2F%E5%BF%AB%E9%80%9F%E6%8F%92%E5%80%BC">多项式多点求值/快速插值</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%A4%9A%E9%A1%B9%E5%BC%8F%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0">多项式三角函数</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%A4%9A%E9%A1%B9%E5%BC%8F%E5%8F%8D%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0">多项式反三角函数</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%B8%B8%E7%B3%BB%E6%95%B0%E9%BD%90%E6%AC%A1%E7%BA%BF%E6%80%A7%E9%80%92%E6%8E%A8">常系数齐次线性递推</a>
+            </li></ol>
+          </li><li class="group-list__item">
+      <h2 class="section__title">
+        <a href="/d/coder_gather/p?q=category%3A%E6%9D%82%E9%A1%B9">杂项</a>
+      </h2>
+              <ol class="chip-list"><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E7%A6%BB%E6%95%A3%E5%8C%96">离散化</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3ACDQ%20%E5%88%86%E6%B2%BB">CDQ 分治</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%95%B4%E4%BD%93%E4%BA%8C%E5%88%86">整体二分</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E8%8E%AB%E9%98%9F">莫队</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E5%88%86%E6%95%B0%E8%A7%84%E5%88%92">分数规划</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E9%9A%8F%E6%9C%BA%E5%8C%96">随机化</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E7%88%AC%E5%B1%B1%E7%AE%97%E6%B3%95">爬山算法</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%A8%A1%E6%8B%9F%E9%80%80%E7%81%AB">模拟退火</a>
+            </li><li class="chip-list__item">
+              <a class="typo-a" href="/d/coder_gather/p?q=category%3A%E6%82%AC%E7%BA%BF%E6%B3%95">悬线法</a>
+            </li></ol>
+          </li></ul>        </div>
+        <div class="section__body edit-mode-hide">
+          <div data-fragment-id="problem_lucky">
+  <p>
+    <a href="/d/coder_gather/problem/random" class="expanded button" target="_blank">
+      <span class="icon icon-feeling-lucky"></span> 试试手气
+    </a>
+  </p>
+  <div class="typo supplementary">
+    <p>根据当前过滤条件随机选择一道题</p>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="footer">
+  <div class="row"><div class="columns">
+      <div class="row footer__links">
+      <div class="medium-3 large-2 columns footer__category expandable">
+        <h1>
+          状态
+          <span class="expand-icon">
+            <span class="icon icon-expand_more"></span>
+          </span>
+        </h1>
+        <div class="footer__category__expander"><ul class="footer__category__list">
+          <li class="footer__category__item"><a href="/d/coder_gather/record">评测队列</a></li>
+          <li class="footer__category__item"><a href="/d/coder_gather/status">服务状态</a></li>
+        </ul></div>
+      </div>
+      <div class="medium-3 large-2 columns footer__category expandable">
+        <h1>
+          开发
+          <span class="expand-icon">
+            <span class="icon icon-expand_more"></span>
+          </span>
+        </h1>
+        <div class="footer__category__expander"><ul class="footer__category__list">
+          <li class="footer__category__item"><a href="https://github.com/hydro-dev/Hydro" target="_blank">开源</a></li>
+        </ul></div>
+      </div>
+      <div class="medium-3 large-2 columns footer__category expandable">
+        <h1>
+          支持
+          <span class="expand-icon">
+            <span class="icon icon-expand_more"></span>
+          </span>
+        </h1>
+        <div class="footer__category__expander"><ul class="footer__category__list">
+          <li class="footer__category__item"><a href="/d/coder_gather/wiki/help">帮助</a></li>
+          <li class="footer__category__item"><a href="/d/coder_gather/wiki/about#contact">联系我们</a></li>
+        </ul></div>
+      </div>
+      <div class="medium-3 large-2 columns footer__category expandable end">
+        <h1>
+          关于
+          <span class="expand-icon">
+            <span class="icon icon-expand_more"></span>
+          </span>
+        </h1>
+        <div class="footer__category__expander"><ul class="footer__category__list">
+          <li class="footer__category__item"><a href="/d/coder_gather/wiki/about">关于</a></li>
+          <li class="footer__category__item"><a href="/d/coder_gather/wiki/about#privacy">隐私</a></li>
+          <li class="footer__category__item"><a href="/d/coder_gather/wiki/about#tos">服务条款</a></li>
+          <li class="footer__category__item"><a href="https://hydro.js.org/#%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC">版权申诉</a></li>
+        </ul></div>
+      </div>
+    </div>
+      <div class="footer__extra-link clearfix">
+      <div class="footer__extra-left">
+        <ol class="clearfix">
+                    <li class="footer__extra-link-item nojs--hide" data-dropdown-target="#menu-footer-lang">
+            <span><span class="icon icon-global"></span> Language <span class="icon icon-expand_less"></span></span>
+            <ol class="dropdown-target menu" id="menu-footer-lang"><li class="menu__item"><a class="menu__link" href="/d/coder_gather/language/en">English</a></li><li class="menu__item"><a class="menu__link" href="/d/coder_gather/language/ko">한국어</a></li><li class="menu__item"><a class="menu__link" href="/d/coder_gather/language/zh">简体中文</a></li><li class="menu__item"><a class="menu__link" href="/d/coder_gather/language/zh_TW">正體中文</a></li></ol>
+          </li>
+          <li class="footer__extra-link-item">
+                          <a href="/legacy?legacy=true">兼容模式</a>
+                      </li>
+          <li class="footer__extra-link-item nojs--hide" data-dropdown-target="#menu-footer-theme">
+            <span><span class="icon icon-global"></span> 主题 <span class="icon icon-expand_less"></span></span>
+            <ol class="dropdown-target menu" id="menu-footer-theme">
+              <li class="menu__item"><a class="menu__link" href="/d/coder_gather/set_theme/light">亮色</a></li>
+              <li class="menu__item"><a class="menu__link" href="/d/coder_gather/set_theme/dark">暗色</a></li>
+            </ol>
+          </li>
+        </ol>
+      </div>
+      <div class="footer__extra-right">
+        <ol class="clearfix"><li class="footer__extra-link-item"></li><li class="footer__extra-link-item">© 2021-2026 Hydro.ac</li><li class="footer__extra-link-item"><script defer src="//analytics.hydro.ac/script.js" data-website-id="e754ebca-826e-406f-92fa-def938a42b1e"></script></li><li class="footer__extra-link-item">Worker 1, 25ms</li>
+          <li class="footer__extra-link-item"><a href="https://hydro.js.org">Hydro v5.0.0-beta.17-40d4c9b-dirty</a> Professional</li>
+        </ol>
+      </div>
+    </div>
+  </div></div>
+</div>
+</div>
+        <script>
+      window.UiContextNew = '{}';
+      window.UserContextNew = '{}';
+    </script>
+  </body>
+</html>

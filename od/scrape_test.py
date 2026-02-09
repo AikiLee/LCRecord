@@ -12,20 +12,54 @@ except ImportError:
 
 def scrape_hydro():
     url = "https://hydro.ac/d/coder_gather/p?q=&sort=default"
-    cookies = "_pk_id.1.b38a=7ba079d193402dab.1745587651.; loggedin=83845; test=4508998636097957; v=0d2abe5f5c5b920b579b60769da2c6cc; sid=sB53r5pRluNyNVkaplfpTdnMNgBaDuKd; sid.sig=nbeo_pbkjLeI22LWX5kDBidAVEI"
+    # Minimal working cookies to avoid SSL/MTU issues with large headers
+    cookies = (
+        "sid=WbPNeRz8QGCSc2FVv13tMpn3YaFzTc9K; sid.sig=0yq2bnfZut_N9tgdLEB-tbSyyCo"
+    )
 
     headers = {
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Cookie": cookies,
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        # "Cookie": cookies, # We pass cookie via -H in curl
     }
 
-    print(f"Fetching {url}...")
+    import ssl
+
+    context = ssl.create_default_context()
+    context.check_hostname = False
+    context.verify_mode = ssl.CERT_NONE
+
+    import subprocess
+    import sys
+
+    print(f"Fetching {url} using curl...")
     try:
-        req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req) as response:
-            html = response.read().decode("utf-8")
+        # Construct the curl command
+        # We use -L to follow redirects (though we expect 302, maybe we want to see the login page if redirected)
+        # But wait, we want to stay logged in. If we are redirected to login, the cookies are invalid.
+        # But first let's just get the content.
+        # Use -k to ignore SSL errors if needed (though curl worked without it in the test, but just in case)
+        cmd = [
+            "curl",
+            "-s",  # silent
+            "-L",  # follow redirects
+            # "-A", headers["User-Agent"], # Removing UA as it seems to cause SSL handshake issues
+            "-H",
+            f"Cookie: {cookies}",
+            url,
+        ]
+
+        result = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8")
+
+        if result.returncode != 0:
+            print(f"Curl failed with return code {result.returncode}")
+            print(result.stderr)
+            return
+
+        html = result.stdout
+        print(f"Fetched {len(html)} bytes.")
+
     except Exception as e:
-        print(f"Error fetching: {e}")
+        print(f"Error executing curl: {e}")
         return
 
     if BeautifulSoup:

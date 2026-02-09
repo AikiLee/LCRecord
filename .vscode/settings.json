@@ -1,4 +1,5 @@
 {
     "editor.inlineSuggest.enabled": false,
-    "python.defaultInterpreterPath": "C:\\Users\\15869\\AppData\\Local\\Python\\bin\\python.exe"
+    "python.defaultInterpreterPath": "C:\\Users\\15869\\AppData\\Local\\Python\\bin\\python.exe",
+    "Codegeex.RepoIndex": true
 }

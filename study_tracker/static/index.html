@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Study Tracker</title>
+    <style>
+        :root {
+            --primary-color: #6366f1;
+            --primary-hover: #4f46e5;
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+        }
+
+        h1, h2 {
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 1px solid var(--border-color);
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #0f172a;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            color: var(--text-color);
+            font-family: inherit;
+            transition: border-color 0.2s;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.1s;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-1px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .problem-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-height: 80vh;
+            overflow-y: auto;
+            padding-right: 0.5rem;
+        }
+
+        .problem-item {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .problem-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .problem-title {
+            font-weight: 600;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+        
+        .problem-title:hover {
+            text-decoration: underline;
+        }
+
+        .problem-meta {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            display: flex;
+            gap: 1rem;
+        }
+
+        .badge {
+            background-color: rgba(99, 102, 241, 0.1);
+            color: #818cf8;
+            padding: 0.25rem 0.6rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-color); 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-color); 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569; 
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .review-section {
+            grid-column: 1 / -1;
+            margin-top: 1rem;
+        }
+        
+        #reviewResult {
+            margin-top: 1rem;
+            white-space: pre-wrap;
+            background: rgba(0,0,0,0.3);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            font-family: monospace;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Left Column: Input Form -->
+    <div class="card">
+        <h2>Add New Problem</h2>
+        <form id="addProblemForm">
+            <div class="form-group">
+                <label for="title">Problem Title / ID</label>
+                <input type="text" id="title" required placeholder="e.g. 1. Two Sum">
+            </div>
+            
+            <div class="form-group">
+                <label for="category">Category</label>
+                <input type="text" id="category" list="categories" placeholder="e.g. Array, DP">
+                <datalist id="categories">
+                    <option value="Array">
+                    <option value="String">
+                    <option value="Dynamic Programming">
+                    <option value="Backtracking">
+                    <option value="Tree">
+                    <option value="Graph">
+                </datalist>
+            </div>
+
+            <div class="form-group">
+                <label for="link">Problem Link</label>
+                <input type="url" id="link" placeholder="https://leetcode.com/...">
+            </div>
+
+            <div class="form-group">
+                <label for="notes">My Notes & Thoughts</label>
+                <textarea id="notes" rows="4" placeholder="What was difficult? Key insight?"></textarea>
+            </div>
+
+            <button type="submit">Save Problem</button>
+        </form>
+    </div>
+
+    <!-- Right Column: Problem List -->
+    <div class="card">
+        <h2>Recent History</h2>
+        <div class="problem-list" id="problemList">
+            <!-- Items injected by JS -->
+            <div style="text-align: center; color: var(--text-muted);">Loading...</div>
+        </div>
+    </div>
+    
+    <!-- Bottom: AI Review -->
+    <div class="card review-section">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h2 style="margin:0">Daily AI Review</h2>
+            <div style="display: flex; gap: 1rem;">
+                <button onclick="generateReview()" style="width: auto;">Generate Review</button>
+                <button onclick="logout()" style="width: auto; background-color: #ef4444;">Logout</button>
+            </div>
+        </div>
+        <div id="reviewResult"></div>
+    </div>
+</div>
+
+<script>
+    const API_URL = 'http://127.0.0.1:8000'; // Relative path
+    const TOKEN = localStorage.getItem('token');
+
+    // Auth Check
+    if (!TOKEN) {
+        window.location.href = '/static/login.html';
+    }
+
+    function logout() {
+        localStorage.removeItem('token');
+        window.location.href = '/static/login.html';
+    }
+
+    // Load problems on start
+    fetchProblems();
+
+    document.getElementById('addProblemForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const problemData = {
+            title: document.getElementById('title').value,
+            category: document.getElementById('category').value,
+            link: document.getElementById('link').value || null,
+            notes: document.getElementById('notes').value || null,
+            // solution: ... (optional add in future)
+        };
+
+        try {
+            const res = await fetch(`${API_URL}/problems/`, {
+                method: 'POST',
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${TOKEN}`
+                },
+                body: JSON.stringify(problemData)
+            });
+
+            if (res.ok) {
+                // Reset form and reload list
+                document.getElementById('addProblemForm').reset();
+                fetchProblems();
+            } else {
+                alert('Error saving problem');
+            }
+        } catch (err) {
+            console.error(err);
+        }
+    });
+
+    async function fetchProblems() {
+        try {
+            const res = await fetch(`${API_URL}/problems/`, {
+                headers: {
+                    'Authorization': `Bearer ${TOKEN}`
+                }
+            });
+            
+            if (res.status === 401) {
+                logout();
+                return;
+            }
+            
+            const problems = await res.json();
+            
+            const listEl = document.getElementById('problemList');
+            listEl.innerHTML = '';
+
+            if (problems.length === 0) {
+                listEl.innerHTML = '<div style="text-align: center; color: var(--text-muted);">No problems recorded yet.</div>';
+                return;
+            }
+
+            problems.forEach(p => {
+                const item = document.createElement('div');
+                item.className = 'problem-item';
+                
+                const titleHtml = p.link 
+                    ? `<a href="${p.link}" target="_blank" class="problem-title">${p.title}</a>`
+                    : `<span class="problem-title">${p.title}</span>`;
+
+                const dateStr = new Date(p.created_at).toLocaleDateString();
+
+                item.innerHTML = `
+                    <div class="problem-header">
+                        ${titleHtml}
+                        <span class="badge">${p.category || 'Uncategorized'}</span>
+                    </div>
+                    <div class="problem-meta">
+                        <span>📅 ${dateStr}</span>
+                    </div>
+                    ${p.notes ? `<div style="margin-top:0.5rem; color: #cbd5e1; font-size: 0.9rem;">📝 ${p.notes}</div>` : ''}
+                `;
+                listEl.appendChild(item);
+            });
+        } catch (err) {
+            console.error('Failed to fetch problems', err);
+        }
+    }
+    
+    async function generateReview() {
+        const resultDiv = document.getElementById('reviewResult');
+        resultDiv.style.display = 'block';
+        resultDiv.textContent = 'Thinking... (Generating AI Analysis)';
+        
+        try {
+            const res = await fetch(`${API_URL}/review/`, {
+                method: 'POST',
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${TOKEN}`
+                },
+                body: JSON.stringify({ date_str: new Date().toISOString().split('T')[0] })
+            });
+            
+            if (res.ok) {
+                const text = await res.json(); // API returns a string
+                resultDiv.textContent = text;
+            } else {
+                const err = await res.json();
+                resultDiv.textContent = `Error: ${err.detail || 'Could not generate review'}`;
+            }
+        } catch (err) {
+            resultDiv.textContent = 'Network error during review generation.';
+        }
+    }
+</script>
+
+</body>
+</html>

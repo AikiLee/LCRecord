@@ -1,0 +1,31 @@
+==================================================
+华为OD题目爬虫脚本
+==================================================
+
+依赖检查:
+  - requests: [X] (将使用 urllib)
+  - BeautifulSoup: [X] (将使用正则)
+
+MD 文件: D:/gitstore/LCRecord/huawei_od_complete_list.md
+从缓存加载了 501 道题目
+
+共有 501 道 hydro.ac 题目
+MD 文件中有 153 道题目
+
+正在匹配题目...
+成功匹配 128 道题目
+
+已更新 MD 文件: D:/gitstore/LCRecord/huawei_od_complete_list.md
+
+匹配结果:
+  采购订单                           -> https://hydro.ac/d/coder_gather/p/oda0124
+  螺旋数字矩阵                         -> https://hydro.ac/d/coder_gather/p/ode0030
+  评委评分                           -> https://hydro.ac/d/coder_gather/p/ode0128
+  最佳信号覆盖问题                       -> https://hydro.ac/d/coder_gather/p/odb0076
+  敏感字段加密                         -> https://hydro.ac/d/coder_gather/p/ode0075
+  手机App防沉迷系统                     -> https://hydro.ac/d/coder_gather/p/ode0036
+  比赛的冠亚季军                        -> https://hydro.ac/d/coder_gather/p/ode0135
+  猜数字                            -> https://hydro.ac/d/coder_gather/p/ode0065
+  流水线                            -> https://hydro.ac/d/coder_gather/p/odb0001
+  国际移动用户识别码(IMSI)匹配              -> https://hydro.ac/d/coder_gather/p/odc0001
+  ... 还有 118 个匹配

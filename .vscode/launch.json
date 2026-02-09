@@ -2,24 +2,26 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Current File",
-            "type": "python",
+            "name": "Python: Current File with Input",
+            "type": "debugpy",
             "request": "launch",
             "program": "${file}",
-            "console": "internalConsole",
+            "console": "integratedTerminal",
+            "cwd": "${fileDirname}",
+            "justMyCode": true,
+            "redirectOutput": true,
+            "args": [],
+            // 从当前文件所在目录的 input.txt 读取输入
+            "redirectInput": "${fileDirname}/input.txt"
+        },
+        {
+            "name": "Python: Current File (No Input)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
             "cwd": "${fileDirname}",
             "justMyCode": true
-        },
-        // {
-        //     "name": "Python: Remote Attach",
-        //     "type": "python",
-        //     "request": "attach",
-        //     "connect": {
-        //         "host": "localhost",
-        //         "port": 5678
-        //     },
-        //     "justMyCode": true,
-        //     "preLaunchTask": "Start Debug Server"
-        // }
+        }
     ]
 }
