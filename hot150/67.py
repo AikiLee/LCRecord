@@ -1,30 +1,56 @@
 class Solution:
+    MASK = 0xFFFFFFFF
+
     def addBinary(self, a: str, b: str) -> str:
-        res = []
-        i, j = len(a) - 1, len(b) - 1
-        carry = 0
+        # 位运算模拟加法：a 存本位和(XOR)，b 存进位(AND << 1)
+        # Python int 是任意精度，不存在越界问题，无需 MASK
+        # (MASK 仅在需要模拟 32 位有符号整数时使用，如 LC 371 涉及负数的场景)
+        a = int(a, 2)
+        b = int(b, 2)
+        while b != 0:
+            # 本位和 (不进位加法)
+            tmp = a ^ b
+            # 进位
+            b = (a & b) << 1
+            a = tmp
+        return bin(a)[2:]
 
-        # 只要还有位数没处理完，或者还有进位，就继续循环
-        while i >= 0 or j >= 0 or carry:
-            # 拿到当前位的值，如果索引越界视为 0
-            digit_a = int(a[i]) if i >= 0 else 0
-            digit_b = int(b[j]) if j >= 0 else 0
+    def minusBinary(self, a: str, b: str) -> str:
+        a = int(a, 2)
+        b = int(b, 2)
+        # 将b转为补码
+        MASK = 0xFFFFFFFF
+        c = ~b + 1 & MASK
+        while c != 0:
+            # 本位和 (不进位加法)
+            tmp = a ^ c & MASK
+            # 进位
+            c = (a & c) << 1
+            a = tmp
+        return bin(a)[2:]
 
-            total = digit_a + digit_b + carry
+    def multipleBinary(self, a: str, b: str) -> int:
+        a = int(a, 2)
+        b = int(b, 2)
+        flag_a, flag_b = 0, 0
+        if a < 0:
+            flag_a = 1
+        if b < 0:
+            flag_b = 1
+        cnt = 0
+        while b != 0:
+            # 提取最低位
+            least = b & 1
+            if least == 1:
+                tmp = a * pow(2, cnt)
+            # b 进行右移
+            b = b >> 1
+        flag = -1 if flag_a ^ flag_b else 1
+        return flag * a
 
-            # 这一位的结果是 total % 2 (例如 1+1=2, 2%2=0)
-            res.append(str(total % 2))
 
-            # 新的进位是 total // 2 (例如 1+1=2, 2//2=1)
-            carry = total // 2
-
-            i -= 1
-            j -= 1
-
-        # 因为是从低位往高位算的（append到末尾），最后要反转
-        return "".join(res[::-1])
-
-
-# 测试
-s = Solution()
-print(s.addBinary("11", "1"))  # 输出 "100"
+if __name__ == "__main__":
+    s = Solution()
+    print(s.multipleBinary("10000011", "1"))
+    # print(s.minusBinary("11", "1"))
+    # expected "110111101100010011000101110110100000011101000101011001000011011000001100011110011010010011000000000"
